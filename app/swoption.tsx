@@ -7,7 +7,7 @@ export const LoopSelect = [
 export const PackageSelect = {
     SW9_Low: [
         { value: 'Family', name: '패밀리카 패키지', price: 5500000, image: 'https://sw-motors.github.io/sw-motors-invoice/image/family.png' },
-        { value: 'Daily', name: '데일리카 패키지', price: 4200000, image: '/sw-motors-invoice/image/daily.png' },
+        { value: 'Daily', name: '데일리카 패키지', price: 4200000, image: '/image/daily.png' },
         { value: 'LimousineMerge', name: '리무진 통합 패키지 (9인승)', price: 6400000 , image: '/sw-motors-invoice/image/limousineMerge.png' }
     ],
     StandardEdge: [
