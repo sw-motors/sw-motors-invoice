@@ -6,21 +6,21 @@ export const LoopSelect = [
 
 export const PackageSelect = {
     SW9_Low: [
-        { value: 'Family', name: '패밀리카 패키지', price: 5500000, image: 'https://sw-motors.github.io/sw-motors-invoice/image/family.png' },
-        { value: 'Daily', name: '데일리카 패키지', price: 4200000, image: '/image/daily.png' },
-        { value: 'LimousineMerge', name: '리무진 통합 패키지 (9인승)', price: 6400000 , image: '/sw-motors-invoice/image/limousineMerge.png' }
+        { value: 'Family', name: '패밀리카 패키지', price: 5500000, image: '/${basePath}/image/family.png' },
+        { value: 'Daily', name: '데일리카 패키지', price: 4200000, image: '/${basePath}/image/daily.png' },
+        { value: 'LimousineMerge', name: '리무진 통합 패키지 (9인승)', price: 6400000 , image: '/${basePath}/image/limousineMerge.png' }
     ],
     StandardEdge: [
-        { value: 'Premium6', name: '프리미엄 차박 패키지 (6인승)', price: 13000000, image: '/sw-motors-invoice/image/premium6.png' },
-        { value: 'Semi', name: '세미 의전 차박 패키지 (6인승)', price: 16000000, image: '/sw-motors-invoice/image/semi.png' },
-        { value: 'LimousineColor', name: '리무진 컬러 패키지 (9인승)', price: 6000000, image: '/sw-motors-invoice/image/limousineColor.png' },
-        { value: 'LimousineMerge', name: '리무진 통합 패키지 (9인승)', price: 6400000, image: '/sw-motors-invoice/image/limousineMerge.png' }
+        { value: 'Premium6', name: '프리미엄 차박 패키지 (6인승)', price: 13000000, image: '/${basePath}/image/premium6.png' },
+        { value: 'Semi', name: '세미 의전 차박 패키지 (6인승)', price: 16000000, image: '/${basePath}/image/semi.png' },
+        { value: 'LimousineColor', name: '리무진 컬러 패키지 (9인승)', price: 6000000, image: '/${basePath}/image/limousineColor.png' },
+        { value: 'LimousineMerge', name: '리무진 통합 패키지 (9인승)', price: 6400000, image: '/${basePath}/image/limousineMerge.png' }
     ],
     SignatureMolding: [
-        { value: 'TheH', name: '더에이치 패키지', price: 13780000, image: '/sw-motors-invoice/image/theh.png' },
-        { value: 'Premium6', name: '프리미엄 차박 패키지 (6인승)', price: 13000000, image: '/sw-motors-invoice/image/premium6.png' },
-        { value: 'Semi', name: '세미 의전 차박 패키지 (6인승)', price: 16000000, image: '/sw-motors-invoice/image/semi.png' },
-        { value: 'LimousineColor', name: '리무진 컬러 패키지 (9인승)', price: 6000000, image: '/sw-motors-invoice/image/limousineColor.png' },
-        { value: 'LimousineMerge', name: '리무진 통합 패키지 (9인승)', price: 6400000, image: '/sw-motors-invoice/image/limousineMerge.png' }
+        { value: 'TheH', name: '더에이치 패키지', price: 13780000, image: '/${basePath}/image/theh.png' },
+        { value: 'Premium6', name: '프리미엄 차박 패키지 (6인승)', price: 13000000, image: '/${basePath}/image/premium6.png' },
+        { value: 'Semi', name: '세미 의전 차박 패키지 (6인승)', price: 16000000, image: '/${basePath}/image/semi.png' },
+        { value: 'LimousineColor', name: '리무진 컬러 패키지 (9인승)', price: 6000000, image: '/${basePath}/image/limousineColor.png' },
+        { value: 'LimousineMerge', name: '리무진 통합 패키지 (9인승)', price: 6400000, image: '/${basePath}/image/limousineMerge.png' }
     ]
 };
