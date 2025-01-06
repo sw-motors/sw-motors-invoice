@@ -124,35 +124,6 @@ export default function Home() {
     setCarPrice(totalPrice);
   }, [carEngine, carGrade, carColor, selectOption, swOption, selectedPackage, isTransportSelected]);
 
-  function CustomerInfo() {
-    return (
-      <>
-        <h5>고객명</h5>
-        <Input
-          placeholder="성함"
-          type="text"
-          value={customerName}
-          onChange={(e) => setCustomerName(e.target.value)}
-        />
-        <br />
-        <h5>고객 연락처</h5>
-        <Input
-          placeholder="연락처"
-          type="tel"
-          value={customerPhone}
-          onChange={(e) => setCustomerPhone(e.target.value)}
-        />
-        <br />
-        <h5>견적일</h5>
-        <DatePicker
-          aria-label="Date (Min Date Value)"
-          defaultValue={today(getLocalTimeZone())}
-          variant="bordered"
-        />
-      </>
-    );
-  }
-
   function Engine() {
     return (
       <>
@@ -404,8 +375,6 @@ export default function Home() {
   return (
     <section className="mx-4 mt-2 flex flex-col gap-2">
       <br />
-      <CustomerInfo />
-      <br />
       <Engine />
       {Warning && <p style={{ color: 'red' }}>엔진을 먼저 선택해주세요.</p>}
       <br />
@@ -421,7 +390,7 @@ export default function Home() {
       <br />
       <Transport />
       <br />
-      <h5>총 금액: {carPrice.toLocaleString()} 원</h5>
+      <h3>총 금액: {carPrice.toLocaleString()} 원</h3>
     </section>
   );
 }
