@@ -4,6 +4,10 @@ import React from 'react';
 import { CheckboxGroup, Checkbox } from '@nextui-org/checkbox';
 import { Image } from '@nextui-org/image';
 import { useState, useEffect } from 'react';
+import getConfig from 'next/config';
+
+const { publicRuntimeConfig } = getConfig();
+const basePath = publicRuntimeConfig.basePath || '';
 
 import {
   CarPriceGasoline,
@@ -262,7 +266,7 @@ export default function Home() {
   };
   
   function PackageImage({
-    src="/sw-motors-invoice/",
+    src,
     alt = 'Image not available', // 기본값 제공
     width = '550px',
     height = '250px',
@@ -270,7 +274,7 @@ export default function Home() {
     return (
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <Image
-          src={src}
+          src={`${basePath}${src}`}
           alt={alt}
           style={{
             width,
