@@ -4,6 +4,7 @@ import React from 'react';
 import { CheckboxGroup, Checkbox } from '@nextui-org/checkbox';
 import { Image } from '@nextui-org/image';
 import { useState, useEffect } from 'react';
+import { useRouter } from "next/router";
 
 import {
   CarPriceGasoline,
@@ -269,10 +270,11 @@ export default function Home() {
     width = '550px',
     height = '250px',
   }: PackageImageProps) {
+    const { basePath } = useRouter();
     return (
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <Image
-          src={src}
+          src={`${basePath}${src}`}
           alt={alt}
           style={{
             width,
