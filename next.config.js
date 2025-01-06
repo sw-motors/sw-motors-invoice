@@ -1,13 +1,12 @@
-const isProd = process.env.NODE_ENV === 'production';
-
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  basePath: '/sw-motors-invoice',
+  assetPrefix: '/sw-motors-invoice',
   images: {
-    unoptimized: true
+    unoptimized: true,
   },
-  assetPrefix: isProd ? '/sw-motors-invoice/' : '',
-  basePath:  isProd ? "/sw-motors-invoice" : '',
-  output: "export"
+  trailingSlash: true,
+  output: 'export',
 };
 
-export default nextConfig;
+module.exports = nextConfig;
