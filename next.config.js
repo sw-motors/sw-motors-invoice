@@ -4,9 +4,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  publicRuntimeConfig: {
-    basePath: '/sw-motors-invoice',
-  },
   trailingSlash: true,
   output: 'export',
 };

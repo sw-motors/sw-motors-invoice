@@ -4,10 +4,6 @@ import React from 'react';
 import { CheckboxGroup, Checkbox } from '@nextui-org/checkbox';
 import { Image } from '@nextui-org/image';
 import { useState, useEffect } from 'react';
-import getConfig from 'next/config';
-
-const { publicRuntimeConfig } = getConfig();
-const basePath = publicRuntimeConfig.basePath || '';
 
 import {
   CarPriceGasoline,
@@ -32,6 +28,8 @@ export default function Home() {
   const [selectOption, setSelectOption] = useState<string[]>([]);
   const [isTransportSelected, setIsTransportSelected] = useState(false);
 
+  const [customerName, setCustomerName] = useState<string>('');
+  const [customerPhone, setCustomerPhone] = useState<string>('');
   const [Warning, setWarning] = useState<boolean>(false);
 
   const resetSelections = () => {
@@ -274,7 +272,7 @@ export default function Home() {
     return (
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <Image
-          src={`${basePath}${src}`}
+          src={src}
           alt={alt}
           style={{
             width,
