@@ -1,4 +1,3 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
   basePath: '/sw-motors-invoice',
   assetPrefix: '/sw-motors-invoice',
