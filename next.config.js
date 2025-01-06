@@ -8,6 +8,7 @@ const nextConfig = {
     basePath: '/sw-motors-invoice',
   },
   trailingSlash: true,
+  output: 'export',
 };
 
 export default nextConfig;
