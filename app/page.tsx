@@ -281,7 +281,6 @@ export default function Home() {
             borderRadius: '8px', // 추가 스타일 옵션
             boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', // 그림자 추가
           }}
-          priority
         />
         {alt && <p style={{ marginTop: '5px', fontSize: '14px', color: '#555' }}>{alt}</p>}
       </div>
