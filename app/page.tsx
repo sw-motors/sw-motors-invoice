@@ -2,9 +2,6 @@
 
 import React from 'react';
 import { CheckboxGroup, Checkbox } from '@nextui-org/checkbox';
-import { DatePicker } from '@nextui-org/react';
-import { today, getLocalTimeZone } from '@internationalized/date';
-import { Input } from '@nextui-org/react';
 import { Image } from '@nextui-org/image';
 import { useState, useEffect } from 'react';
 
@@ -31,8 +28,6 @@ export default function Home() {
   const [selectOption, setSelectOption] = useState<string[]>([]);
   const [isTransportSelected, setIsTransportSelected] = useState(false);
 
-  const [customerName, setCustomerName] = useState<string>('');
-  const [customerPhone, setCustomerPhone] = useState<string>('');
   const [Warning, setWarning] = useState<boolean>(false);
 
   const resetSelections = () => {
