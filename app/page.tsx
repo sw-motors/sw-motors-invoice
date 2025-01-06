@@ -262,7 +262,7 @@ export default function Home() {
   };
   
   function PackageImage({
-    src,
+    src="/sw-motors-invoice/",
     alt = 'Image not available', // 기본값 제공
     width = '550px',
     height = '250px',
