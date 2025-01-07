@@ -4,7 +4,6 @@ import React from 'react';
 import { CheckboxGroup, Checkbox } from '@nextui-org/checkbox';
 import { Image } from '@nextui-org/image';
 import { useState, useEffect } from 'react';
-import { useRouter } from "next/router";
 
 import {
   CarPriceGasoline,
@@ -167,7 +166,7 @@ export default function Home() {
           label="차량 등급마다 선택할 수 있는 색상에 차이가 있어요."
           orientation="horizontal"
           value={carColor}
-          onChange={(selectedValues) => setCarColor(selectedValues.slice(0, 1))}
+          onChange={(selectedValues: any[]) => setCarColor(selectedValues.slice(0, 1))}
         >
           <Checkbox value="color1">스노우 화이트 펄(SWP) (+80,000)</Checkbox>
           {!carGrade.includes('Gravity') && (
@@ -195,7 +194,7 @@ export default function Home() {
           label="차량 엔진마다 선택할 수 있는 색상에 차이가 있어요."
           orientation="horizontal"
           value={carSheet}
-          onChange={(selectedValues) => setCarSheet(selectedValues.slice(0, 1))}
+          onChange={(selectedValues: any[]) => setCarSheet(selectedValues.slice(0, 1))}
         >
           <Checkbox value="sheet1">토프</Checkbox>
           {!carGrade.includes('Prestige') && (
@@ -270,11 +269,10 @@ export default function Home() {
     width = '550px',
     height = '250px',
   }: PackageImageProps) {
-    const { basePath } = useRouter();
     return (
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <Image
-          src={`${basePath}${src}`}
+          src
           alt={alt}
           style={{
             width,
@@ -319,7 +317,7 @@ export default function Home() {
           label="패키지를 선택해주세요."
           orientation="horizontal"
           value={selectedPackage}
-          onChange={(selectedValues) =>
+          onChange={(selectedValues: any[]) =>
             setSelectedPackage(selectedValues.slice(0, 1))
           } // 단일 선택
         >
