@@ -1,6 +1,6 @@
 const nextConfig = {
-  basePath: '/sw-motors-invoice',
-  assetPrefix: '/sw-motors-invoice',
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH || "",
+  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH || "",
   images: {
     unoptimized: true,
   },

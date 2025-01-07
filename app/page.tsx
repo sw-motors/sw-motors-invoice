@@ -272,7 +272,7 @@ export default function Home() {
     return (
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <Image
-          src={src}
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH}${src}`}
           alt={alt}
           style={{
             width,
@@ -335,7 +335,7 @@ export default function Home() {
                 {pkg.name} (+{pkg.price.toLocaleString()} 원)
               </Checkbox>
               <PackageImage
-                src={`/image/${pkg.value}.png`} // 예: 패키지의 이미지 경로
+                src={pkg.image} // 예: 패키지의 이미지 경로
                 alt={pkg.name}
               />
             </div>
