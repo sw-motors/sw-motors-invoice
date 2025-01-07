@@ -272,7 +272,7 @@ export default function Home() {
     return (
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <Image
-          src
+          src={src}
           alt={alt}
           style={{
             width,
