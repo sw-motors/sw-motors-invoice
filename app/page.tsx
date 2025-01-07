@@ -28,8 +28,6 @@ export default function Home() {
   const [selectOption, setSelectOption] = useState<string[]>([]);
   const [isTransportSelected, setIsTransportSelected] = useState(false);
 
-  const [customerName, setCustomerName] = useState<string>('');
-  const [customerPhone, setCustomerPhone] = useState<string>('');
   const [Warning, setWarning] = useState<boolean>(false);
 
   const resetSelections = () => {
